@@ -1,0 +1,16 @@
+import random
+gameNumber = random.randint(0,100)
+print("Guess number in (1-100) : ")
+guesses = 0
+while(userNumber != gameNumber ):
+userNumber = int(input("Guess number in (1-100) : "))
+guesses +=1 
+   if (userNumber == gameNumber) :
+      print("YOU GUESSED CORRECT !!!")      
+   elif userNumber > gameNumber :
+      print ("your number is too large")   
+   else :
+      print("your number is too small")
+           
+print("Game number was : ")
+print(gameNumber)
